@@ -1,0 +1,48 @@
+@model Datchi;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    @* <div class="jumbotron jumbotron-fluid">
+        <h1>TEST</h1> *@
+    @* </div> *@
+    <nav class="navbar navbar-expand-sm bg-light d-flex justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link">Fullness: @Model.Fullness</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link">Happiness: @Model.Happiness</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link">Meals: @Model.Meals</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link">Energy: @Model.Energy</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="border border-dark text-center">
+        <img src="@Model.Image"  alt="DinoDatchi">
+    </div>
+    <br>
+    <div>
+        <p class="text-center lead">@Model.Message</p>
+    </div>
+    <div class="row justify-content-between">
+    @* if check for win/loss condition *@
+        <a href="/feed" class=" col-md-2 btn btn-primary" style="margin-bottom:1%;">Feed</a>
+        <a href="/work" class=" col-md-2 btn btn-primary" style="margin-bottom:1%;">Work</a>
+        <a href="/play" class=" col-md-2 btn btn-primary" style="margin-bottom:1%;">Play</a>
+        <a href="/sleep" class=" col-md-2 btn btn-primary" style="margin-bottom:1%;">Sleep</a>
+    </div>
+    <div class=" mt-5 text-center">
+            <a href="/reset" type="button" class="btn btn-danger">Restart?</a>
+    </div>
+</body>
+</html>

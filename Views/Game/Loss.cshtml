@@ -1,0 +1,40 @@
+@model Datchi;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    @* <div class="jumbotron jumbotron-fluid">
+        <h1>TEST</h1> *@
+    @* </div> *@
+    <nav class="navbar navbar-expand-sm bg-light d-flex justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link">Fullness: @Model.Fullness</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link">Happiness: @Model.Happiness</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link">Meals: @Model.Meals</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link">Energy: @Model.Energy</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="border border-secondary text-center" style="min-height:100px;">
+        <img src="https://pic.funnygifsbox.com/uploads/2019/07/funnygifsbox.com-2019-07-07-11-09-27-49.gif" alt="lose">;
+    </div>
+    <br>
+    <div>
+        <p class="text-center lead">Congrats, You Are Bad at Pets</p>
+    </div>
+    <div class=" mt-5 text-center">
+            <a href="/reset" type="button" class="btn btn-danger">Restart?</a>
+    </div>
+</body>
